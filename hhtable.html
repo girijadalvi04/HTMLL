@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 10px;
+           
+        }
+
+        table{
+            height: 150px;
+            width: 730px;
+        }
+
+         tr:nth-child(odd){
+            background-color: hotpink;
+        
+    }
+    tr:nth-child(even){
+        background-color: aqua; */
+    }
+/* th{
+    background-color: blanchedalmond;
+} */
+ tr:hover{
+    background-color: black;
+    color: aliceblue;
+ }
+ td a{
+    text-decoration: none;
+ }
+
+ tfoot td:hover{
+background-color: aqua;
+ }
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Sr.no</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+
+
+        </tr>
+<tr>
+        <th>Name</th>
+            <td>Tom</td>
+            <td>Som</td>
+            <td>Jim</td>
+        </tr> 
+
+        <tr>
+            <th rowspan="2">Contact</th>
+            <td>24737</td>
+            <td>446667</td>
+            <td>5675</td>
+        </tr>
+
+        <!-- <tr>
+           
+            <td>24737</td>
+            <td>446667</td>
+            <td>5675</td>
+        </tr> -->
+
+        <tr>
+            <th>Company</th>
+            <td><a href="https://www.amazon.in/?&tag=googhydrabk1-21&ref=pd_sl_5szpgfto9i_e&adgrpid=155259813593&hvpone=&hvptwo=&hvadid=708111563274&hvpos=&hvnetw=g&hvrand=15408528857690043989&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007788&hvtargid=kwd-64107830&hydadcr=14452_2391719&gad_source=1" target="_blank">Amazon</a></td>
+            <td><a href="https://www.myntra.com/?utm_source=dms_google&utm_medium=searchbrand_cpc&utm_campaign=dms_google_searchbrand_cpc_Search_Brand_Myntra_Brand_India_BM_TROAS_SOK_New&gad_source=1&gclid=EAIaIQobChMIkaLv8pXlhwMVsapmAh1SrAaSEAAYASAAEgK5KfD_BwE">Myntra</a></td>
+            <td><a href="https://www.flipkart.com/">Flipcart</a></td>
+        
+        </tr>
+
+<tfoot>
+    <tr>
+        <td colspan="4">Table Footer</td>
+    </tr>
+</tfoot>
+    </table>
+</body>
+</html>

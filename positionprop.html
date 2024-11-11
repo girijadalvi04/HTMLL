@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            background-color: honeydew;
+            width: 100%;
+            height: 1000px;
+        }
+
+        #a1 {
+            background-color: hotpink;
+            border: 1px solid black;
+            padding: 3px;
+            margin: 4px;
+            width: 100px;
+            height: 100px;
+            position: static;
+
+        }
+
+        #a2 {
+            background-color: hotpink;
+            border: 1px solid black;
+            top: 60px;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 100px;
+
+        }
+
+        #a3 {
+            background-color: hotpink;
+            border: 1px solid black;
+            top: 130px;
+            width: 100px;
+
+            height: 100px;
+            position: absolute;
+
+
+        }
+
+        #a4 {
+            background-color: hotpink;
+            border: 1px solid black;
+            bottom: 5px;
+            width: 100px;
+            right: 5px;
+            height: 100px;
+            position: fixed;
+
+        }
+
+        #a5 {
+            background-color: hotpink;
+            border: 1px solid black;
+            top: 5px;
+            width: 100px;
+
+            height: 100px;
+            position: sticky;
+            left: 300px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="a" id="a1">static</div>
+        <div class="a" id="a2">relative</div>
+        <div class="a" id="a3">absolute</div>
+        <div class="a" id="a4">fixed</div>
+        <div class="a" id="a5">Sticky</div>
+
+    </div>
+</body>
+
+</html>

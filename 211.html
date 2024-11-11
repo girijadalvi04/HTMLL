@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .main{
+            background-color: gainsboro;
+        }
+
+        ul{
+            list-style-type: none;
+        padding: 0;
+        margin-top: 15px;
+        display: inline-block
+        
+        }
+        
+        li{
+            float: left;
+        }
+ 
+        li a{
+            background-color: hotpink;
+            color: whitesmoke;
+            margin: 5px;
+            padding: 5px;
+            text-decoration: none;
+
+        }
+     .dropdown-options a{
+        background-color: grey;
+        display: block;
+        margin-top: 5px;
+        padding: 5px;
+        text-align: left;
+        border: none;
+     }
+
+     .dropdown-options{
+        position: absolute;
+        display: none;
+     }
+
+     li.dropdown:hover .dropdown-options{
+            display: block;
+           
+        }   
+        
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li class="dropdown"><a href="" class="dropbtn">fashion</a>
+
+         <div class="dropdown-options">
+                    <a href="">aaa</a>
+                    <a href="">aaa</a>
+                    <a href="">aaa</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

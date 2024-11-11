@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* General Styles */
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    section {
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+     .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .nav-links {
+        list-style-type: none;
+        display: flex;
+    }
+    
+    .nav-links li {
+        margin-left: 20px;
+    }
+    
+    .nav-links li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    .nav-links li a:hover {
+        text-decoration: underline;
+    }
+    
+    /* /Hamburger Styles */ */
+     .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    } 
+
+ .hamburger span {
+        height: 3px;
+        width: 25px;
+        background: white;
+        margin: 4px 0;
+        transition: 0.3s;
+    } 
+
+    /* Responsive Styles */
+     @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background-color: #333;
+            position: absolute;
+            top: 60px;
+            left: 0;
+        }
+     }
+        .nav-links li {
+            margin: 15px 0;
+            text-align: center;
+        } */
+
+    .nav-links.active {
+            display: flex;
+        }
+    
+        .hamburger {
+            display: flex;
+        }  
+    li.services a.button:hover {
+        background-color: aqua;
+        display: block;
+    }
+
+    /* li.services:hover a.ryun {
+        /* display: block; */
+     */
+
+    .ryun {
+        position: absolute;
+        display: none;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyLogo</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a>
+
+
+
+
+                </li>
+                <li class="services"><a href=""class="button">Services</a>
+                    <div class="ryun">
+                        <a href="">rffr</a>
+                        <a href="">frfr</a>
+                    </div>
+
+
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+       
+            <div class="hamburger" id="hamburger" onclick="toggleNavbar()">
+                <span></span>
+                <span></span>
+                <span></span>
+
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to Our Website</h1>
+        <p>This is the home section of the page with a responsive navbar.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <p>Our services are tailored to meet your needs.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Learn more about our company and mission.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Feel free to get in touch with us.</p>
+    </section>
+    <script src="script.js"></script>
+
+    </div>
+</body>
+
+</html>

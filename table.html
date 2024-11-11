@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        
+        table {
+
+            width: 100%;
+        } 
+
+ 
+        table,
+        th,
+         td {
+
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 15px;
+           
+        }  
+
+
+        tr
+         
+/* 
+        tr:hover,td:hover{
+            background-color: palevioletred
+        } */
+ tr:hover{
+    background-color: blueviolet;
+    color: gray;
+}
+td:hover{
+    background-color:bisque;
+}  
+
+        /* th{
+            background-color: aqua;
+        }
+        td{
+            background-color: blue;
+        }
+tr{
+    background-color: aquamarine;
+} */
+        /* 
+
+        th {
+
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        } */
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>this is student info</caption>
+        <tr>
+            <th>Sr.no</th>
+            <th>Name</th>
+            <th colspan="2">Contact no</th>
+            
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>john</td>
+            <td>12345</td>
+            <td>12345</td>
+            
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>ash</td>
+            <td>12345</td>
+           
+        </tr>
+
+
+        <tr>
+            <td>3</td>
+            <td>sam</td>
+            <td>12345</td>
+        </tr>
+<tfoot>
+    <tr>
+        <td colspan="4">this is footer</td>
+    </tr>
+</tfoot>
+
+    </table>
+</body>
+
+</html>

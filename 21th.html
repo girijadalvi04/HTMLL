@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        li {
+            float: left;
+        }
+
+        /* 
+        .main {
+            background-color: antiquewhite;
+        } */
+
+        ul {
+
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+        }
+
+        li a {
+
+            text-decoration: none;
+            padding: 5px;
+            margin: 5px;
+            background-color: palevioletred;
+            border: none;
+            color: aliceblue;
+        }
+
+        .dropdown-options a {
+
+            background-color: rgb(153, 124, 181);
+            border: none;
+            color: aliceblue;
+            margin-top: 5px;
+            padding: 8px;
+            text-align: left;
+            display: block;
+        }
+
+                 
+        li.dropdown{
+            display: inline-block;
+
+        }   
+           .dropdown-options {
+            position: absolute;
+            display: none;
+        }   
+ 
+         li a:hover{
+            background-color: black;
+        }  
+
+         li.dropdown:hover .dropdown-options{
+            display: block;
+           
+        }    
+
+         li.dropdown a.dropbtn {
+       background-color: aqua;
+        } 
+
+         li.dropdown a.dropbtn:hover {
+            background-color: gainsboro;
+            color: aliceblue;
+        }    
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <ul>
+            <li><a href=""><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li>
+            <li class="dropdown"><a href=""class="dropbtn">fashion</a>
+                <div class="dropdown-options">
+                    <a href="">men's clothing</a>
+                    <a href="">women's clothing</a>
+                    <a href="">accessories</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</body>
+
+</html>
